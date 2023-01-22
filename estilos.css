@@ -1,0 +1,531 @@
+
+ * {
+ 	margin:0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: "Century Gothic", sans-serif;
+ 	
+ }
+
+ /*-------------Main-Container---------------------------*/
+
+ .main-container {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	padding: 40px 70px;
+ 	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url("bg.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+
+ }
+
+/* ------------------Header------------*/
+
+.header1 {
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 12%;
+}
+
+.logoimg {
+	height: 30px;
+	width: 30px;
+
+}
+
+.header1 h1 {
+	color: #ffcce6;
+	font-size: 2rem;
+	text-shadow: 0 0 4px black;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li {
+	list-style-type: none;
+    display: inline-block;
+    margin-right: 40px;
+    text-shadow: 0 0 4px black;
+    letter-spacing: 1px;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 3; 
+}
+
+.menuimg {
+	width: 25px;
+	height: 25px;
+	filter: invert(1);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.menuimg:active {
+	transform: scale(0.95);
+}
+/* ------------------Pseudo-effect-nav---------*/
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0;
+	background:white;
+	transition: all 0.7s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+/*---------------Footer---------------------- */
+
+.footer1 {
+	height: auto;
+}
+
+
+/*---------------Social Network----------*/
+
+.social {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 25px;
+}
+
+
+
+.social img {
+	width: 35px;
+	height: 35px;
+	margin-right: 25px;
+   
+}	
+
+.social a {
+	transition: all 0.5s;
+	text-decoration: none;
+}
+ 
+.social a:hover {
+	transform: translateY(-8px);
+} 
+/*---------------subscribe-------------*/
+.subscribe {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+
+}
+
+.bellicon {
+	width: 35px;
+	height: 35px;
+	margin-right: 15px;
+    transform: rotate(10deg);
+}
+
+.sub1 {
+	color: white;
+	margin-right:15px;
+}
+
+.sub1 h3{
+	font-size: 1rem;
+	
+	font-weight: 500;
+	text-shadow: 0 0 4px black;
+
+}
+
+.sub1 p {
+	font-size: 0.8rem;
+	
+	font-weight: 500;
+	text-shadow: 0 0 4px black;
+} 
+
+.email {
+	width:15%;
+	height: 30px;
+	outline: none;
+	border:none;
+	box-shadow: 0 0 5px black;
+
+
+}
+
+.subButn {
+	background-color: #00b33c;
+	height: 30px;
+	border:none;
+	outline: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	transition: 0.6s;
+	
+}
+
+.subButn:active {
+	transform: scale(0.97);
+	box-shadow: 0 0 2px #009933;
+	background-color: #006622;
+}
+
+/*------------Developer-----------*/
+
+.developer  {
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+.developer h5 {
+	font-weight: 500;
+    text-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+
+/* -----------Help---------------*/
+
+.help {
+	position: fixed;
+	width:60px;
+	height: auto;
+	bottom: 20px;
+	right: 25px;
+	transition: 0.3s;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.help:hover { 
+	transform: translateY(-8px);
+
+}
+/*--------------------MAIN ----------------------*/
+.main1 {
+	height: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    margin-bottom: 120px;
+
+}
+
+.main1 > div {
+	width: 280px;
+	margin-top: 80px;
+	margin-right: 25px;
+	text-align: left;
+	height: 200px;
+	border-radius: 15px;
+    box-shadow: 0 0 8px black;
+}
+
+
+
+
+.m1 {
+	background-image: url(m1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+	cursor: pointer;
+
+
+}
+
+.m1:hover {
+	transform: scale(1.1);
+}
+
+.m2 {
+	background-image: url(m2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.m2:hover {
+	transform: scale(1.1);
+}	
+
+.m3 {
+	background-image: url(m3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.m3:hover {
+	transform: scale(1.1);
+}	
+
+.m4 {
+	background-image: url(m4.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.m4:hover {
+	transform: scale(1.1);
+}	
+
+ .main1 div h3 {
+	color: white;
+	text-shadow: 0 0 3px black;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0.7);
+	font-weight: 500;
+	border-radius: 15px;
+	display: inline-block;
+	
+}
+
+div.time {
+	position: relative;
+	bottom: 40px;
+	left: 0px;
+	color: #ffcce6;
+	font-size: 0.8rem;
+	text-shadow: 0 0 5px black;
+}
+
+/*-------------------------------------------PRODUCTS PAGE ------------------------------------------------*/
+.container-2 {
+    width:100%;
+	height: 100%;
+	padding: 40px 70px;
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url("bg.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;
+	color: white;
+ }	
+
+ .main-produtos {  /*-------------------------------MAIN-FLEX------------------*/
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width:85%;
+	margin: auto;
+}
+
+.main-produtos> div {
+	width: 200px;
+	margin: 20px;
+	align-items: center;
+}
+
+.main-produtos div img {
+	height: 200px;
+	width:200px;
+	border-radius: 15px;
+	object-fit: cover;
+	filter:drop-shadow(0 0 5px #008000);
+	transition: 0.4s;
+	cursor: pointer;
+
+}
+
+.main-produtos div img:hover {
+	transform: scale(1.15);
+}
+
+.main-produtos h2 {
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-shadow: 0 0 4px black;
+}
+
+.main-produtos .strike {
+	text-decoration: line-through;
+	font-size: 0.7rem;
+	text-shadow: 0 0 4px black;
+}
+
+.main-produtos .preço {
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-shadow: 0 0 4px black;
+}
+
+p > small {
+	font-weight: lighter;
+	font-size: 0.9rem;
+	text-shadow: 0 0 4px black;
+}
+
+.main-produtos .semjuros {
+	font-size: 0.75rem;
+	text-shadow: 0 0 4px black;
+}
+
+/*---------------------------------------------BUTTON--------------*/
+.vermais {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.vermais .butn {
+	background-color: white;
+	color: black;
+	padding:5px 15px;
+	border:none;
+	outline: none;
+	border-radius: 15px;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	box-shadow: 0 0 3px white;
+	cursor: pointer;
+}
+
+.vermais .butn:hover {
+	letter-spacing: 4px;
+}
+
+.vermais .butn:active {
+	transform: scale(0.95);
+}
+
+/*-------------------------------------------CONTATOS PAGE---------------------------------*/
+
+.container-3 {
+	width:100%;
+	height: 100%;
+	padding: 40px 70px;
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url("bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;
+	color: white;
+}
+
+/*---------------------------------Form---------------------------*/
+
+.form {
+	width: 100%;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+label {
+	letter-spacing: 2px;
+	font-size: 1.1rem;
+	text-decoration: underline;
+}
+
+.button {
+	cursor: pointer;
+	background-color: white;
+	color:black;
+	padding:5px 15px;
+	border-radius: 25px;
+	border:none;
+	outline: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	box-shadow: 0 0 4px white;
+	transition: 0.5s;
+}
+
+.button:hover {
+	letter-spacing: 4px;
+}
+
+.button:active {
+	transform: scale(0.97);
+}
+
+.form h2 {
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	text-decoration: underline;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.input1 {
+	background-color: #ffe6ff;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+}
+
+/*----------------------------------RIGHT--------------------*/
+.right {
+  width: auto;
+  border:5px solid ;
+  border-left-style: hidden;
+  border-top-color: #ff3399;
+  border-bottom-color: #ff3399; 
+  border-right-style: hidden;
+  height: 600px;
+  padding: 35px;
+  text-align: center;
+  margin-top: 70px;
+  
+  
+}
+
+.right h2 {
+	font-size: 1.8rem;
+	color:#ff3399;
+	margin-bottom: 30px;
+	text-shadow: 0 0 8px black;
+	letter-spacing: 2px;
+	filter: drop-shadow(0 0 1px #ff3399);
+}
+
+.right .poem {
+	font-size:1.1rem;
+	text-shadow: 0 0 4px black;
+	filter: drop-shadow(0 0 1px white);
+
+}
+
+/*----------------------------Borboleta------------*/
+
+.butterfly  {
+	width: auto;
+	margin-top: 200px;
+	margin-left: 0;
+}
+
+.form img {
+	width: 150px;
+	height: 150px;
+}	
+	

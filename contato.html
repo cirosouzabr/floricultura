@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+	<meta charset="utf-8">
+	<title>Contatos</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+   <div class="container-3">
+   	    
+   	    <header class="header1"> <!----------Header--------------->
+  	      <h1>Contatos</h1>
+  	       <nav> <!--flex-->
+  	 	    <ul>
+  	 		   <li><a href="index.html">Home</a></li>
+  	 		   <li><a href="produtos.html">Produtos</a></li>
+  	 		   <li><a href="#">Empresa</a></li>
+  	 		   <li><a href="#">Contato</a></li>
+  	 	    </ul> 
+  	      </nav>
+  	     <img src="menu.png" alt="menu image" class="menuimg">   
+        </header>
+   
+     <main class="main-3">
+
+     	 <div class="form"> <!---------------------------FORM-------------------->
+		 <form method="post" action="https://sheltered-lowlands-36886.herokuapp.com/devs1-projeto.php">
+			<h2>Área de Compras</h2>
+			
+			<label>Nome: </label><br>
+			 <input type="text" name="nome" size=30 maxlength=80 class="input1"/><br><br>
+			<label>Endereço: </label><br>
+			 <input type="text" name="endereco" size=30 maxlength=120 class="input1"/><br><br>
+			<label>E-mail: </label><br>
+			 <input type="text" name="email" size=30 maxlength=50 class="input1"/><br><br>
+			<label>Produtos de seu interesse: </label><br><br>
+			 <input type="checkbox" name="produto[]" value="crisântemo"/> Crisântemo<br>
+             <input type="checkbox" name="produto[]" value="orquídea"/> Orquídea<br>
+             <input type="checkbox" name="produto[]" value="azaleia"/> Azaleia<br>
+             <input type="checkbox" name="produto[]" value="podocarpus"/> Podocarpus<br>
+             <input type="checkbox" name="produto[]" value="rosa" checked/> Rosa<br>
+         
+
+            <label>Forma de Pagamento:</label><br><br>
+            <input type="radio" name="pagamento" value="pix"/> Pix<br>
+             <input type="radio" name="pagamento" value="picpay"/> PicPay<br><br>
+
+            <label>Forma de Entrega: </label><br><br>
+             <input type="radio" name="entrega" value="delivery"/> Delivery 
+             <input type="radio" name="entrega" value="takeaway"/> Takeaway <br><br>
+
+            <label>Mensagem: </label><br>
+             <textarea name="mensagem" rows="10" cols="40" class="input1">Digite a sua mensagem aqui.
+             </textarea><br><br> 
+
+            <!--Submit-->
+             <input type="submit" value="Enviar" target="_blank" class="button" /> 
+        
+        </form>
+         
+        <div class="right"> <!-----------------------------RIGHT------------------>
+    	  <h2>Quando eu flor, quando tú flores,<br> quando ele flor…</h2>
+    	  <p class="poem">Nós flores  seremos. E o mundo florescerá.<br>
+           Que esta primavera perfume o seu coração<br> com todos os aromas da alegria.<br><br>
+           Que o calor seja suave. E que a brisa seja amena.<br>
+           Que o perfume seja doce. E que cada dia valha<br> a pena.<br><br>
+           Que estes três meses lhe renovem a paz, o amor, a<br> saúde e a força para seguir com os projetos da sua<br> vida.<br><br>
+           Deixe que a vida faça contigo o que a primavera faz<br> com as flores.<br>
+           Encante – se! Transborde cor! Espalhe amor!<br><br><br>
+
+           Borbolete – se.</p>
+        </div>
+    	
+        <img src="butterfly1.png" alt="Butterfly Image" class="butterfly">
+
+	</div>
+    </main>
+    <img src="chat.png" class="help">
+    <div class="time"> Time Zone </div> <!--------Time--------->
+   </div>
+<script src="script.jss"></script>
+</body>
+</html>
